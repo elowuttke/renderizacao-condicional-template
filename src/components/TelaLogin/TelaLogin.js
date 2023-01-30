@@ -17,7 +17,9 @@ function TelaLogin(props) {
           <Input type={"password"} />
         </StyledLabel>
         <SendButton onClick={enviarLogin}>Entrar</SendButton>
-        <RegisterButton >Cadastre-se</RegisterButton>
+{/* Chame a função no onClick do botão “Cadastre-se”
+Agora faça o mesmo para voltar para tela de login ao clicar no botão “Já possuo um cadastro” */}
+        <RegisterButton onClick={() => props.mudarTela(2)}>Cadastre-se</RegisterButton>
       </Form>
     </FormContainer>
   );
